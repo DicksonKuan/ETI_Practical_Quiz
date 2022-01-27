@@ -12,7 +12,7 @@ services:
     deploy:
       restart_policy:
         condition: on-failure
-    image: jiameelorh/ETI_Quiz
+    image: jiameelorh/eti-quiz
 
 networks:
   default: null
