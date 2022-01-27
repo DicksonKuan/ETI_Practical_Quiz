@@ -1,0 +1,20 @@
+version: '3.3'
+
+services:
+  # Busstop
+  Busstop:
+    container_name: "Busstop"
+    build:
+      context: ./busStop
+      dockerfile: Dockerfile
+    ports:
+      - 6030:6030
+    deploy:
+      restart_policy:
+        condition: on-failure
+    image: jiameelorh/ETI_Quiz
+
+networks:
+  default: null
+volumes:
+  ridesharevol: null
